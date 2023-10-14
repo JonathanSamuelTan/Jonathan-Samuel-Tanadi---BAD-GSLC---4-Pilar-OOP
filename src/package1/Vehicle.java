@@ -15,11 +15,11 @@ public class Vehicle {
         this.manufactureYear = manufactureYear;
     }
 
-    public void start() {
+    public void startEngine() {
         System.out.println("Vehicle started");
     }
 
-    public void stop() {
+    public void stopEngine() {
         System.out.println("Vehicle stopped");
     }
 

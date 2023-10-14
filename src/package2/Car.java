@@ -20,12 +20,12 @@ public class Car extends LandVehicle {
     }
 
     @Override
-    public void start() {
+    public void startEngine() {
         System.out.println("Car started");
     }
 
     @Override
-    public void stop() {
+    public void stopEngine() {
         System.out.println("Car stopped");
     }
 

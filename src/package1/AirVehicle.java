@@ -19,12 +19,12 @@ public class AirVehicle extends Vehicle{
     }
 
     @Override
-    public void start() {
+    public void startEngine() {
         System.out.println("AirVehicle started");
     }
 
     @Override
-    public void stop() {
+    public void stopEngine() {
         System.out.println("AirVehicle stopped");
     }
 

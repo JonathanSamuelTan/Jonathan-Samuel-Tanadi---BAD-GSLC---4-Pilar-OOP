@@ -14,26 +14,59 @@ public class Main {
 
 		Car v4 = new Car("Ferrari","La Ferrari",2,2000000000,2019,4,"Bensin","Hyper Car",2);
 
-		System.out.println("Class vehicle memiliki method: start() yang berfungsi untuk menyalakan mesin. berikut adalah outputnya: ");
-		v1.start();
-		System.out.println("");
-
-		System.out.println("method ini kemudian diturunkan kepada child class dari vehicle (LandVehicle dan AirVehicle)");
-		System.out.println("Setiap child class memiliki implementasi yang berbeda-beda terhadap method start() (polymorph)");
-		System.out.println("");
-
-		System.out.println("LandVehicle akan menghasilkan output:");
-		v2.start();
-		System.out.println("AirVehicle akan menghasilkan output:");
-		v3.start();
-
-		System.out.println("");
-		System.out.println("Class car juga memiliki method start() karena secara tidak langsung, class car juga merupakan child class dari vehicle (melalui LandVehicle)");
-		System.out.println("Namun, method start() pada class car memiliki implementasi yang berbeda dari method start() pada class LandVehicle");
-		System.out.println("");
+		System.out.println(" ");
+		System.out.println(" ");
 		
-		System.out.println("Class car memiliki method start() yang menghasilkan output:");
-		v4.start();
+		System.out.println("Vehicle is a super class of LandVehicle, AirVehicle, and Car");
+		System.out.println("It has 2 methods, startEngine() and stopEngine()");
+		System.out.println("The output of startEngine() in Vehicle :");
+		v1.startEngine();
+		System.out.println("The output of stopEngine() in Vehicle :");
+		v1.stopEngine();
+		System.out.println(" ");
+
+		System.out.println("LandVehicle is a subclass of Vehicle");
+		System.out.println("It has 2 methods that inherited by Vehicle class, startEngine() and stopEngine()");
+		System.out.println("The output of startEngine() in LandVehicle :");
+		v2.startEngine();
+		System.out.println("The output of stopEngine() in LandVehicle :");
+		v2.stopEngine();
+		System.out.println("It has 2 methods that only exist in LandVehicle & its child, turnOnSignalLights() and honk()");
+		System.out.println("The output of turnOnSignalLights() in LandVehicle :");
+		v2.turnOnSignalLights();
+		System.out.println("The output of honk() in LandVehicle :");
+		v2.honk();
+		System.out.println(" ");
+
+		System.out.println("AirVehicle is a subclass of Vehicle");
+		System.out.println("It has 2 methods that inherited by Vehicle class, startEngine() and stopEngine()");
+		System.out.println("The output of startEngine() in AirVehicle :");
+		v3.startEngine();
+		System.out.println("The output of stopEngine() in AirVehicle :");
+		v3.stopEngine();
+		System.out.println("It has 2 methods that only exist in AirVehicle & its child, takeoff() and land()");
+		System.out.println("The output of takeoff() in AirVehicle :");
+		v3.takeoff();
+		System.out.println("The output of land() in AirVehicle :");
+		v3.land();
+		System.out.println(" ");
+
+		System.out.println("Car is a subclass of LandVehicle");
+		System.out.println("It has 2 methods that inherited by LandVehicle class, startEngine() and stopEngine()");
+		System.out.println("The output of startEngine() in Car :");
+		v4.startEngine();
+		System.out.println("The output of stopEngine() in Car :");
+		v4.stopEngine();
+		System.out.println("It has 2 methods that inherited by LandVehicle class, turnOnSignalLights() and honk()");
+		System.out.println("The output of turnOnSignalLights() in Car :");
+		v4.turnOnSignalLights();
+		System.out.println("The output of honk() in Car :");
+		v4.honk();
+		System.out.println("It has 2 methods that only exist in Car, moveReverse() and turnOnAC()");
+		System.out.println("The output of moveReverse() in Car :");
+		v4.moveReverse();
+		System.out.println("The output of turnOnAC() in Car :");
+		v4.turnOnAC();
 
 	}
 
